@@ -1,0 +1,16 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1= title
+    p Welcome to #{title}
+#display
+    #login        
+        form(method='post')
+            | Enter your name if you want to be a ninja
+            div
+                input(type='text', name='username')
+                input(type='submit', name='olduser', value='Log In')    
+                input(type='submit', name='newuser', value='Register')    
